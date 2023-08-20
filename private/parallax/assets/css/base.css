@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+main {
+  /* IE対応 */
+  display: block;
+}
+html {
+  background: #fff;
+  color: #000;
+  line-height: 1;
+  font-size: 100%;
+}
+body {
+  font-family: YakuHanJP, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-feature-settings : "palt";
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  tap-highlight-color: rgba(0,0,0,0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body, div, section, header, footer, nav, article, aside, main, dl, ul, p, a, :after, :before {
+  backface-visibility: hidden;
+}
+a {
+  color: #000;
+  border: 0;
+  background-color: transparent;
+  overflow: hidden;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: 0;
+  vertical-align: bottom;
+  line-height: 0px;
+  /* max-width: 100%; */
+  width: 100%;
+  height: auto;
+}
+svg {
+  max-width: 100%;
+  display: block;
+}
+img[src$=".svg"] {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: inherit;
+}
+ol, ul {
+  list-style-type: none;
+}
+em, strong {
+  font-weight: inherit;
+  font-style: normal;
+}
+small {
+  font-size: inherit;
+}
+address {
+  font-style: normal;
+}
+
+a,
+input[type="button"],
+input[type="submit"]  {
+  -webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+*::selection {
+  background-color: rgba(51, 153, 255, .4);
+}
+
+@media screen and (max-width: 1150px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 85%;
+  }
+}

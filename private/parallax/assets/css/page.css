@@ -1,0 +1,26 @@
+@charset "utf-8";
+.p-slider {
+  --mt: 80;
+  margin-top: calc(var(--mt) * 1em/16);
+  display: flex;
+  overflow: hidden;
+}
+.p-slider__list-inner {
+  display: flex;
+}
+.p-slider__listItem {
+  margin-right: calc(40em/16);
+  overflow: hidden;
+}
+.p-slider__listItemImg {
+  width: calc(400em/16);
+  height: calc(400em/16);
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.p-slider__listItemImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: calc(var(--position) * 1%) center;
+}
